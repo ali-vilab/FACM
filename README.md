@@ -3,28 +3,22 @@
   FACM: Flow-Anchored Consistency Models
 </h2>
 
-<h2 align="center">
+<h3 align="center">
 🔥 FACM outperforms 2×250-step Lightning-DiT on ImageNet 256 with only 2 steps
-</h2>
+</h3>
 
-<div align="center">
-  <span style="font-size: 1.2em; font-weight: bold;">FID=1.76 (1-step) &nbsp;&nbsp;&nbsp;&nbsp; FID=1.32 (2-step)</span>
-</div>
-
+<h3 align="center">
+  <span style="font-size: 1.2em; font-weight: bold;"><strong>FID=1.76 (1-step) &nbsp;&nbsp;&nbsp;&nbsp; FID=1.32 (2-step)</strong></span>
+</h3>
 
 <p align="center">
-    <br>
     📄 This is the official implementation of the paper:
     <br>
-    <a href="https://arxiv.org/abs/xxxxxx">Flow-Anchored Consistency Models</a>
+    <a href="https://github.com/ali-vilab/FACM/blob/main/cache/Flow_Anchored_Consistency_Models.pdf">Flow-Anchored Consistency Models</a>
 </p>
 
 <p align="center">
 Yansong Peng, Kai Zhu, Yu Liu, Pingyu Wu, Hebei Li, Xiaoyan Sun, Feng Wu
-</p>
-
-<p align="center">
-<strong>If you like FACM, please give us a ⭐! Your support motivates us to keep improving!</strong>
 </p>
 
 <p align="center">
@@ -33,13 +27,16 @@ Yansong Peng, Kai Zhu, Yu Liu, Pingyu Wu, Hebei Li, Xiaoyan Sun, Feng Wu
     </em>
 </p>
 
+<p align="center">
+<strong>If you like FACM, please give us a ⭐! Your support motivates us to keep improving!</strong>
+</p>
 
 ## ImageNet 256 Performance on 8 × A100 GPUs
 
 | Model | Steps | FID | IS | Epochs-Pretrain | Epochs-Distill | Download |
 |:-----:|:-----:|:---:|:--:|:---------------:|:--------------:|:--------:|
 | FACM | 2-step | 1.32 | 292 | 800 | 100 | [100ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/100ep-stg2.pt) |
-| FACM | 1-step | 1.76 | 289 | 800 | 250 | [250ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/250ep-stg2.pt) |
+| FACM | 1-step | 1.76 | 290 | 800 | 250 | [250ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/250ep-stg2.pt) |
 
 ## Quick Start
 
@@ -106,7 +103,7 @@ If you use `FACM` or its methods in your work, please cite the following BibTeX 
       title={Flow-Anchored Consistency Models},
       author={Yansong Peng and Kai Zhu and Yu Liu and Pingyu Wu and Hebei Li and Xiaoyan Sun and Feng Wu},
       year={2025},
-      eprint={x},
+      eprint={xxxx},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
@@ -116,3 +113,5 @@ If you use `FACM` or its methods in your work, please cite the following BibTeX 
 ## Acknowledgements
 
 The model architecture part is based on the [Lightning-DiT](https://github.com/hustvl/LightningDiT) repository.
+
+✨ Feel free to contribute and reach out if you have any questions! ✨
