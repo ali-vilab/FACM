@@ -106,7 +106,7 @@ If you use `FACM` or its methods in your work, please cite the following BibTeX 
       title={Flow-Anchored Consistency Models},
       author={Yansong Peng and Kai Zhu and Yu Liu and Pingyu Wu and Hebei Li and Xiaoyan Sun and Feng Wu},
       year={2025},
-      eprint={},
+      eprint={x},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
