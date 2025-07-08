@@ -8,13 +8,13 @@
 </h3>
 
 <h3 align="center">
-  <span style="font-size: 1.2em; font-weight: bold;"><strong>FID=1.76 (1-step) &nbsp;&nbsp;&nbsp;&nbsp; FID=1.32 (2-step)</strong></span>
+  <span style="font-size: 1.2em; font-weight: bold;"><strong>FID=1.70 (1-step) &nbsp;&nbsp;&nbsp;&nbsp; FID=1.32 (2-step)</strong></span>
 </h3>
 
 <p align="center">
     📄 This is the official implementation of the paper:
     <br>
-    <a href="https://github.com/ali-vilab/FACM/blob/main/cache/Flow_Anchored_Consistency_Models.pdf">Flow-Anchored Consistency Models</a>
+    <a href="https://arxiv.org/abs/2507.03738">Flow-Anchored Consistency Models</a>
 </p>
 
 <p align="center">
@@ -37,6 +37,7 @@ Yansong Peng, Kai Zhu, Yu Liu, Pingyu Wu, Hebei Li, Xiaoyan Sun, Feng Wu
 |:-----:|:-----:|:---:|:--:|:---------------:|:--------------:|:--------:|
 | FACM | 2-step | 1.32 | 292 | 800 | 100 | [100ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/100ep-stg2.pt) |
 | FACM | 1-step | 1.76 | 290 | 800 | 250 | [250ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/250ep-stg2.pt) |
+| FACM | 1-step | 1.70 | 295 | 800 | 400 | [400ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/400ep-stg2.pt) |
 
 ## Quick Start
 
@@ -57,13 +58,13 @@ bash scripts/extract.sh
 *Note: You can also download pre-extracted ImageNet latents following [Lightning-DiT](https://github.com/hustvl/LightningDiT/blob/main/docs/tutorial.md).
 
 ### Inference
-Download pretrained FACM model checkpoint [100ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/100ep-stg2.pt) and [250ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/250ep-stg2.pt) to `./cache`
+Download pretrained FACM model checkpoint [100ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/100ep-stg2.pt) or [400ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/400ep-stg2.pt) to `./cache`
 
 ```bash
 bash scripts/test.sh --ckpt-path cache/100ep-stg2.pt --sampling-steps 2
 ```
 ```bash
-bash scripts/test.sh --ckpt-path cache/250ep-stg2.pt --sampling-steps 1
+bash scripts/test.sh --ckpt-path cache/400ep-stg2.pt --sampling-steps 1
 ```
 
 ### Training
@@ -100,10 +101,10 @@ If you use `FACM` or its methods in your work, please cite the following BibTeX 
 
 ```latex
 @misc{peng2025facm,
-      title={Flow-Anchored Consistency Models},
+      title={Flow-Anchored Consistency Models}, 
       author={Yansong Peng and Kai Zhu and Yu Liu and Pingyu Wu and Hebei Li and Xiaoyan Sun and Feng Wu},
       year={2025},
-      eprint={xxxx},
+      eprint={2507.03738},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
