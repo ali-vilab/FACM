@@ -58,6 +58,10 @@ bash scripts/extract.sh
 *Note: You can also download pre-extracted ImageNet latents following [Lightning-DiT](https://github.com/hustvl/LightningDiT/blob/main/docs/tutorial.md).
 
 ### Inference
+```bash
+pip install -e git+https://github.com/LTH14/torch-fidelity.git@master#egg=torch-fidelity
+```
+
 Download pretrained FACM model checkpoint [100ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/100ep-stg2.pt) or [400ep-stg2.pt](https://huggingface.co/Peterande/FACM/blob/main/400ep-stg2.pt) to `./cache`
 
 ```bash
