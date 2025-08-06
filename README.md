@@ -31,6 +31,10 @@ Yansong Peng, Kai Zhu, Yu Liu, Pingyu Wu, Hebei Li, Xiaoyan Sun, Feng Wu
 <strong>If you like FACM, please give us a ⭐! Your support motivates us to keep improving!</strong>
 </p>
 
+## Progress
+- [x] Release FACM on ImageNet 256
+- [ ] Release Wan 2.2 T2I + FACM 🚀
+
 ## ImageNet 256 Performance on 8 × A100 GPUs
 
 | Model | Steps | FID | IS | Epochs-Pretrain | Epochs-Distill | Download |
